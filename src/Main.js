@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {
   Navigator
-} from 'react-native';
+} from 'react-native-deprecated-custom-components';
 
-import SignIn from './src/components/auth/signin';
+import SignIn from './components/auth/signin';
 
 const routes = {
   signIn: SignIn

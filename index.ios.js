@@ -12,7 +12,7 @@ import {
   View
 } from 'react-native';
 
-import Main from './src/main'
+import Main from './src/Main'
 
 export default class TopicWhiz extends Component {
   render() {
