@@ -3,10 +3,12 @@ import {
   Navigator
 } from 'react-native-deprecated-custom-components';
 
-import SignIn from './components/auth/signin';
+import signIn from './components/auth/signin';
+import signUp from './components/auth/signUp';
 
 const routes = {
-  signIn: SignIn
+  signIn,
+  signUp
 }
 
 export default class Main extends Component {
