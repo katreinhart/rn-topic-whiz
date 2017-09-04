@@ -21,13 +21,12 @@ export default class SignIn extends Component {
     }
   }
   componentDidMount() {
-      firebaseApp.auth().onAuthStateChanged(user => {
-        if(user) {
-          console.log('user', user)
-        }
-
-        //navigate to main page
-      })
+    firebaseApp.auth().onAuthStateChanged(user => {
+      if(user) {
+        console.log('user', user)
+        this.props.navigator.push({name: 'Topics'})
+      }
+    })
   }
 
   signIn() {

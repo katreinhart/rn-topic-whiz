@@ -6,9 +6,12 @@ import {
 import signIn from './components/auth/signin';
 import signUp from './components/auth/signUp';
 
+import Topics from './components/Topics';
+
 const routes = {
   signIn,
-  signUp
+  signUp,
+  Topics
 }
 
 export default class Main extends Component {
@@ -22,13 +25,11 @@ export default class Main extends Component {
   }
 
   renderScene(route, navigator) {
-    let Component = routes[route.name];
-
+    let Component = routes[route.name]
     return(
       <Component
         navigator={navigator}
       />
-
     )
   }
 }
